@@ -1,0 +1,80 @@
+.nav__menu {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 6vh;
+    border-radius: 0.5vw;
+    background-color: #ffffff;
+    box-shadow: 0 7px 5px -5px #FCF8F4;
+    li {
+        display: flex;
+        align-items: center;
+        border-top: 0.2vw solid transparent;
+        a {
+            font-size: 0.95vw;
+            font-family: 'MuseoSansCyrl-300';
+            color: #282828;
+            vertical-align: center;
+        }
+        .nav_active {
+            font-family: 'MuseoSansCyrl-700';
+        }
+        &:hover {
+            border-top: 0.2vw solid #E88D92;
+        }
+    }
+}
+.mob__menu {
+    text-transform: uppercase;
+    padding-top: 5rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    left: -9999rem;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25rem;
+        height: 3rem;
+        a {
+            color: #e5999d;
+        }
+    }
+
+}
+.close-burger {
+    position: absolute;
+    right: 1.4vw;
+    top: 3vh;
+    width: 1vw;
+    height: 2vh;
+    opacity: 0.3;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.close-burger:after {
+    transform: rotate(-45deg);
+}
+.close-burger:before {
+    transform: rotate(45deg);
+}
+.close-burger:before, .close-burger:after {
+    position: absolute;
+    left: -1rem;
+    top: -1rem;
+    content: " ";
+    height: 2rem;
+    width: 0.1rem;
+    background-color: #333;
+}

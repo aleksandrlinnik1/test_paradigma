@@ -1,0 +1,25 @@
+
+
+
+body {
+    font-family: 'MuseoSansCyrl-300', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 81vw;
+    margin: 0 auto;
+}
+
+@import "reset";
+@import "font";
+@import "header";
+@import "nav";
+@import "main-content";
+@import "modal";
+@import "custom-select";
+@import "media";
+
+
+
+
