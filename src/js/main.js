@@ -22,7 +22,6 @@ popCloseBtn.addEventListener('click', opacity0);
 closeBurger.addEventListener('click', burgMenuOf);
 
 
-
 function displayBlock() {
     overlay.classList.remove('not-view');
     overlay.classList.add('view')
@@ -66,10 +65,9 @@ let select = function () {
         let text = this.innerText,
             select = this.closest('.custom-select-wrap'),
             currentText = select.querySelector('.select-current');
-        currentText.innerText = text;
-        select.classList.remove('is-active');
+            currentText.innerText = text;
+            select.classList.remove('is-active');
 
     }
 };
-
 select();
